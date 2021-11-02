@@ -6,7 +6,11 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Repositories" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.11" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Kjelloo.WebShop.Core\Kjelloo.WebShop.Core.csproj" />
     </ItemGroup>
 
 </Project>

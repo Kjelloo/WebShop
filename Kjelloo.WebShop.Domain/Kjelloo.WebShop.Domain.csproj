@@ -6,7 +6,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Services" />
+      <ProjectReference Include="..\Kjelloo.WebShop.Core\Kjelloo.WebShop.Core.csproj" />
     </ItemGroup>
 
 </Project>
