@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kjelloo.WebShop.Core", "Kjelloo.WebShop.Core\Kjelloo.WebShop.Core.csproj", "{215E23CC-9E89-4C81-ACE2-E454F35EF01F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kjelloo.WebShop.Domain", "Kjelloo.WebShop.Domain\Kjelloo.WebShop.Domain.csproj", "{EFE7CD39-934A-4A97-9F6F-DC51FBB0121B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kjelloo.WebShop.Infrastructure.EFCore", "Kjelloo.WebShop.Infrastructure.EFCore\Kjelloo.WebShop.Infrastructure.EFCore.csproj", "{7A02874B-5269-4B33-BB62-8580EDFA89CB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{5E4B3E19-01D1-4F50-BFDC-F3E700EFB6DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kjelloo.WebShop.WebApi", "Kjelloo.WebShop.WebApi\Kjelloo.WebShop.WebApi.csproj", "{B6876A04-7948-4A92-9BC0-E658397479A4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{C6BD95A3-CBE0-4756-B64E-28BE5FD432D4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{D522787D-CF8B-416B-B4F5-095E9839C6DC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{D571A38F-DAD5-4D00-AC7A-0C629C4352CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{215E23CC-9E89-4C81-ACE2-E454F35EF01F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{215E23CC-9E89-4C81-ACE2-E454F35EF01F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{215E23CC-9E89-4C81-ACE2-E454F35EF01F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{215E23CC-9E89-4C81-ACE2-E454F35EF01F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFE7CD39-934A-4A97-9F6F-DC51FBB0121B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFE7CD39-934A-4A97-9F6F-DC51FBB0121B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFE7CD39-934A-4A97-9F6F-DC51FBB0121B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFE7CD39-934A-4A97-9F6F-DC51FBB0121B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A02874B-5269-4B33-BB62-8580EDFA89CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A02874B-5269-4B33-BB62-8580EDFA89CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A02874B-5269-4B33-BB62-8580EDFA89CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A02874B-5269-4B33-BB62-8580EDFA89CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6876A04-7948-4A92-9BC0-E658397479A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6876A04-7948-4A92-9BC0-E658397479A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6876A04-7948-4A92-9BC0-E658397479A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6876A04-7948-4A92-9BC0-E658397479A4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B6876A04-7948-4A92-9BC0-E658397479A4} = {5E4B3E19-01D1-4F50-BFDC-F3E700EFB6DE}
+		{215E23CC-9E89-4C81-ACE2-E454F35EF01F} = {C6BD95A3-CBE0-4756-B64E-28BE5FD432D4}
+		{EFE7CD39-934A-4A97-9F6F-DC51FBB0121B} = {D522787D-CF8B-416B-B4F5-095E9839C6DC}
+		{7A02874B-5269-4B33-BB62-8580EDFA89CB} = {D571A38F-DAD5-4D00-AC7A-0C629C4352CE}
+	EndGlobalSection
+EndGlobal
