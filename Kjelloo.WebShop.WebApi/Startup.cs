@@ -60,7 +60,7 @@ namespace Kjelloo.WebShop.WebApi
                 {
                     opt
                         .UseLoggerFactory(loggerFactory)
-                        .UseSqlite("Data Source=petShop.db");
+                        .UseSqlite("Data Source=webshop.db");
                 }, ServiceLifetime.Transient );
 
             services.AddScoped<IProductRepository, ProductRepository>();

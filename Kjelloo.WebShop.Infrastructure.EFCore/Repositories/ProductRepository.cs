@@ -15,7 +15,7 @@ namespace WebShop.Infrastructure.Data.Repositories
         }
 
 
-        public IEnumerable<Product> GetProducts()
+        public IEnumerable<Product> GetAll()
         {
             var selectQuery = _ctx.Products
                 .Select(pe => new Product
