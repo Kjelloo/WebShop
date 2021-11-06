@@ -13,8 +13,7 @@ namespace WebShop.Infrastructure.Data.Repositories
         {
             _ctx = ctx;
         }
-
-
+        
         public IEnumerable<Product> GetAll()
         {
             var selectQuery = _ctx.Products
@@ -23,7 +22,7 @@ namespace WebShop.Infrastructure.Data.Repositories
                     Id = pe.Id,
                     Name = pe.Name
                 });
-            return selectQuery.ToList();
+            return selectQuery;
         }
     }
 }

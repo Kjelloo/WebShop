@@ -1,10 +1,10 @@
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using Kjelloo.WebShop.WebApi.DTOs.Auth;
-using Microsoft.AspNetCore.Http;
+using Kjelloo.WebShop.WebApi.DTOs.Auth.login;
 using Microsoft.AspNetCore.Mvc;
+using WebShop.Core.Models;
+using WebShop.Core.Services;
+using WebShop.Infrastructure.Data.Repositories;
 
 namespace Kjelloo.WebShop.WebApi.Controllers
 {
@@ -12,17 +12,31 @@ namespace Kjelloo.WebShop.WebApi.Controllers
     [ApiController]
     public class AuthController : ControllerBase
     {
+        private readonly IUserService _userService;
+
+        public AuthController(IUserService userService)
+        {
+            _userService = userService;
+        }
+
+        [Route("/api/auth/login")]
         [HttpPost]
         public ActionResult<TokenDto> Login([FromBody] LoginDto loginDto)
         {
-            if ("kjello".Equals(loginDto.Username) && "123".Equals(loginDto.Password))
+            var users = _userService.GetAll();
+
+            var user = users.Select(usr => new LoginDto
+            {
+                Username = usr.Username,
+                Password = usr.Password
+            }).FirstOrDefault(dto => dto.Username == loginDto.Username && dto.Password == loginDto.Password);
+
+            if (user != null)
             {
                 return Ok(new TokenDto {JwtToken = "jwttoken"});
             }
-            else
-            {
-                return Unauthorized();
-            }
+
+            return Unauthorized();
         }
     }
 }

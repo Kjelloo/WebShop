@@ -9,6 +9,7 @@ namespace WebShop.Infrastructure.Data
         public WebShopContext(DbContextOptions<WebShopContext> options) : base(options) {}
         
         public DbSet<ProductEntity> Products { get; set; }
+        public DbSet<UserEntity> Users { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -16,7 +17,7 @@ namespace WebShop.Infrastructure.Data
             {
                 if (i % 2 == 0)
                 {
-                    modelBuilder.Entity<ProductEntity>().HasData(new ProductEntity()
+                    modelBuilder.Entity<ProductEntity>().HasData(new ProductEntity
                     {
                         Id = i,
                         Name = "Product " + i
@@ -24,7 +25,7 @@ namespace WebShop.Infrastructure.Data
                 }
                 else
                 {
-                    modelBuilder.Entity<ProductEntity>().HasData(new ProductEntity()
+                    modelBuilder.Entity<ProductEntity>().HasData(new ProductEntity
                     {
                         Id = i,
                         Name = "New Product " + i
